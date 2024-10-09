@@ -16,7 +16,7 @@ ENVIRONMENT?=production
 
 # Only deploy from master (to production env) or test (to test env)
 ifeq ($(GIT_BRANCH),master)
-	ENVIRONMENT=production
+	ENVIRONMENT=Default
 	DEPLOY_TARGET=deploy
 else
 	ifeq ($(GIT_BRANCH),test)
